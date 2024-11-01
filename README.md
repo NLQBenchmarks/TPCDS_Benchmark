@@ -1,26 +1,20 @@
 ![LLM](resources/nlqb_image.png)
 
-# LLM Text-to-SQL Benchmark
+<table border="0" style="width: 100%">
+ <tr>
+    <th style="width:40%;font-size:30px">LLM Text-to-SQL Benchmark</b></th>
+    <th style="width:20%;font-size:30px">Current Leaderboard</b></th>
+ </tr>
+ <tr>
+    <td>
+    NLQB is a free and open source benchmark that enables evaluation and comparison of Text-to-SQL solutions. It expands on an industry standard benchmark for database performance called TPC-DS as well as 3rd party research on LLMs. The motivation is to provide an objective, quantitative method to evaluate text-to-sql solutions on a “level playing field” with the same inputs. 
 
-In the past year, using LLMs to power Text-to-SQL workloads has earned tremendous interest from both Academia and Industry. In response to this interest, there have been a large number of experiments and products aimed at making a viable Text-to-SQL solution. However, there has been a consistent issue in the industry to try and evaluate these solutions in comparison to one another, as almost all of them have created their own private benchmarking or grading scheme. As a result, these solutions are often siloed and no clear industry leader has been determined. 
-
-To help address this issue, this repo has been created to do 2 things.
+This repo has been created to do 3 things.
 1. Host the material for a public benchmark, including a dataset, evaluation questions, and evaluation method 
-2. Host a performance leaderboard for Text-to-SQL solutions against this evaluation set
+2. Host a performance leaderboard to show how text-to-sql solutions compare to each other
+3. Enable the community to submit an entry or suggest changes to the benchmark
 
 This repo will serve as the hosting site for this leaderboard, as well as the distribution place for any related resources. In the sections below, you'll find links to getting the data, as well as information on how to test and verify AtScale's current Text-to-SQL solution. We look forward to seeing all the great solutions folks can come up with!
-
-## Current Leaderboard
-The leaderboard score is broken down into the following categories:
-- low_q/low_s: score on low question and low schema complexity prompts
-- low_q/high_s: score on low question and high schema complexity prompts
-- high_q/low_s: score on high question and low schema complexity prompts
-- high_q/high_s: score on high question and high schema complexity prompts
-- overall: the average score across the 4 categories
-
-| Team Name    | Submission Name| low_q/low_s | low_q/high_s | high_q/low_s | high_q/high_s | overall |
-| -------- | ------- | :-----: | :-----: | :-----: | :-----: | :-----: |
-| [AtScale](https://www.atscale.com/)  | [Gemini Whitepaper](https://www.atscale.com/resource/natural-language-prompting-with-semantic-layer-genai/?utm_medium=social&utm_source=linkedin&utm_campaign=202408llm&utm_content=whitepaper&utm_term=text) | 100% | 100% | 100% | 70% | 92.5% |
 
 
 ## Getting the Data
@@ -64,3 +58,24 @@ To evaluate your own implementation, you would first execute these queries and d
 ## Submitting Model
 
 To submit an entry to the leaderboard, reach out to ailink@atscale.com.
+
+
+</td>
+<td>
+    
+## Current Leaderboard
+The leaderboard score is broken down into the following categories:
+- low_q/low_s: score on low question and low schema complexity prompts
+- low_q/high_s: score on low question and high schema complexity prompts
+- high_q/low_s: score on high question and low schema complexity prompts
+- high_q/high_s: score on high question and high schema complexity prompts
+- overall: the average score across the 4 categories
+
+| Team Name    | Submission Name| low_q/low_s | low_q/high_s | high_q/low_s | high_q/high_s | overall |
+| -------- | ------- | :-----: | :-----: | :-----: | :-----: | :-----: |
+| [AtScale](https://www.atscale.com/)  | [Gemini Whitepaper](https://www.atscale.com/resource/natural-language-prompting-with-semantic-layer-genai/?utm_medium=social&utm_source=linkedin&utm_campaign=202408llm&utm_content=whitepaper&utm_term=text) | 100%| 100% | 100% | 70% | 92.5% |
+
+</td>
+ </tr>
+</table>
+
