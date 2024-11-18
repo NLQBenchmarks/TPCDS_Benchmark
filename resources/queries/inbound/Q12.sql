@@ -1,0 +1,1 @@
+SELECT `i_product_name`, `m_store_returns_count_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `i_product_name`

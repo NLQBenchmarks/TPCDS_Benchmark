@@ -1,0 +1,1 @@
+SELECT `d_Customer State Name`, `Customer Count`, `Sold Calendar Year`, `Catalog and Web Sales` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Sold Calendar Year` = 2002) and (`Catalog and Web Sales` > 500000000)) ORDER BY `d_Customer State Name`, `Sold Calendar Year`

@@ -1,0 +1,1 @@
+SELECT `m_cs_bill_customer_sk_count` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model`

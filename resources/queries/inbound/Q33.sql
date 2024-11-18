@@ -1,0 +1,1 @@
+SELECT `d_Store State Name`, `d_s_manager`, `m_store_sales_price`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Sold Calendar Year` = 2002) and (`d_Store State Name` = 'Tennessee')) ORDER BY `d_Store State Name`, `d_s_manager`, `Sold Calendar Year`

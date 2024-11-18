@@ -1,0 +1,1 @@
+SELECT `m_ss_quantity_avg`, `I category`, `d_store_name` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `I category`, `d_store_name`

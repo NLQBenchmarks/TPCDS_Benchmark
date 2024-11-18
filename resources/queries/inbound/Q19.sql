@@ -1,0 +1,1 @@
+SELECT `I category`, `product_count` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `I category`

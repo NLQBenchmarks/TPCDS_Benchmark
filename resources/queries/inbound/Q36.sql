@@ -1,0 +1,1 @@
+SELECT `d_Store State Name`, `d_store_name`, `m_ss_quantity_sum`, `m_store_returns_count_sum`, `d_s_hours`, `d_s_floor_space` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_Store State Name` = 'Tennessee')) ORDER BY `d_Store State Name`, `d_store_name`, `d_s_hours`, `d_s_floor_space`

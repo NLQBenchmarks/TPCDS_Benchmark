@@ -1,0 +1,1 @@
+SELECT `i_product_name`, `Total Net Profit` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `i_product_name`

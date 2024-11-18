@@ -1,0 +1,1 @@
+SELECT `Inventory Calendar Year`, `d_product_brand_name`, `d_i_color`, `m_inventory_quantity_on_hand_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Inventory Calendar Year` = 2002) and (`m_inventory_quantity_on_hand_sum` > 0)) ORDER BY `Inventory Calendar Year`, `d_product_brand_name`, `d_i_color`

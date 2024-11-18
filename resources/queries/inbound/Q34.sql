@@ -1,0 +1,1 @@
+SELECT `Ship d_Customer State Name`, `Ws_Web_Site_Sk Level`, `m_ws_quantity_sum`, `m_ws_ext_ship_cost_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Ship d_Customer State Name` = 'New Jersey')) ORDER BY `d_Customer State Name`, `Ws_Web_Site_Sk Level`

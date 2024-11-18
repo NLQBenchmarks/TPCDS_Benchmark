@@ -1,0 +1,1 @@
+SELECT `d_store_city`, `d_store_name`, `Income Band`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_store_city` = 'Midway') and (`Sold Calendar Year` = 2002)) ORDER BY `d_store_city`, `d_store_name`, `Income Band`, `Sold Calendar Year`

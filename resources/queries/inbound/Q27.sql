@@ -1,0 +1,1 @@
+SELECT `Ship Mode Type`, `d_customer_last_name`, `Ship Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Ship Calendar Year` = 2002) and (`d_customer_last_name` = 'Abel')) ORDER BY `Ship Mode Type`, `d_customer_last_name`, `Ship Calendar Year`

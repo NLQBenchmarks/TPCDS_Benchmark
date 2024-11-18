@@ -1,0 +1,1 @@
+SELECT `d_Store State Name`, `m_ss_customer_sk_count`, `m_ss_quantity_avg`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Sold Calendar Year` = 2002)) ORDER BY `d_Store State Name`, `Sold Calendar Year`

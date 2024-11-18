@@ -1,0 +1,1 @@
+SELECT `d_customer_city`, `d_cd_dep_count`, `Income Band` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Income Band` = 7) and (`d_cd_dep_count` > 5)) ORDER BY `d_customer_city`, `d_cd_dep_count`, `Income Band`

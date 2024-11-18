@@ -1,0 +1,1 @@
+SELECT `Carrier`, `Ship Mode Type` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Ship Mode Type` = 'EXPRESS')) ORDER BY `Carrier`, `Ship Mode Type`

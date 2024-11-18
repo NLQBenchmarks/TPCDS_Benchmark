@@ -1,0 +1,1 @@
+SELECT `d_Customer State Name`, `d_customer_zip_code`, `m_catalog_sales_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_Customer State Name` = 'Maryland')) ORDER BY `d_Customer State Name`, `d_customer_zip_code`
