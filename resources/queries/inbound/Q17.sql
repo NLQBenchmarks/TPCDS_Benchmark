@@ -1,0 +1,1 @@
+SELECT `d_product_brand_name`, `m_ss_quantity_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `d_product_brand_name`

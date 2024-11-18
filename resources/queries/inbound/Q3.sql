@@ -1,0 +1,1 @@
+SELECT `d_s_manager`, `d_store_name`, `d_s_floor_space`, `d_store_city` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_store_city` = 'Midway')) ORDER BY `d_s_manager`, `d_s_floor_space`, `d_store_city`

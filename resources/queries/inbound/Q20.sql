@@ -1,0 +1,1 @@
+SELECT `d_Customer State Name`, `m_web_sales_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `d_Customer State Name`

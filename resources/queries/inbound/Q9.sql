@@ -1,0 +1,1 @@
+SELECT `d_store_name`, `d_s_number_employees` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `d_store_name`, `d_s_number_employees`

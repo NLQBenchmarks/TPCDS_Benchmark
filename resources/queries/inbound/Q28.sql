@@ -1,0 +1,1 @@
+SELECT `i_product_name`, `d_i_size`, `d_cd_gender`, `d_customer_city` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_cd_gender` = 'F') and (`d_customer_city` = 'Wright')) ORDER BY `i_product_name`, `d_i_size`, `d_cd_gender`, `d_customer_city`

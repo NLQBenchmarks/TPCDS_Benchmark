@@ -1,0 +1,1 @@
+SELECT `i_product_name`, `d_cd_dep_count`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_cd_dep_count` = 4) and (`Sold Calendar Year` = 2002)) ORDER BY `i_product_name`, `d_cd_dep_count`, `Sold Calendar Year`

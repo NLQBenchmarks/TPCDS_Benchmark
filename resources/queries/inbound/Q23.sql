@@ -1,0 +1,1 @@
+SELECT `d_customer_first_name`, `d_cd_gender`, `d_store_name`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_store_name` = 'ese') and (`Sold Calendar Year` = 2001)) ORDER BY `d_customer_first_name`, `d_cd_gender`, `d_store_name`, `Sold Calendar Year`

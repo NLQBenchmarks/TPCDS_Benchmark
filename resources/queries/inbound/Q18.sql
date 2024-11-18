@@ -1,0 +1,1 @@
+SELECT `Total Quantity Sold`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `Sold Calendar Year`
