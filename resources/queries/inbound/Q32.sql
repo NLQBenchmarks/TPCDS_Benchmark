@@ -1,1 +1,15 @@
-SELECT `d_Store State Name`, `m_ss_customer_sk_count`, `m_ss_quantity_avg`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Sold Calendar Year` = 2002)) ORDER BY `d_Store State Name`, `Sold Calendar Year`
+SELECT
+  `Store State`,
+  COUNT(`Store Customer Count`) AS `Store Customer Count`,
+  AVG(`Store Quantity Sold`) AS `Average Sales Quantity`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Sold Calendar Year` = 2002
+  AND `Store State` IS NOT NULL
+  AND `Store Customer Count` IS NOT NULL
+  AND `Store Quantity Sold` IS NOT NULL
+GROUP BY
+  `Store State`
+ORDER BY
+  `Store State`

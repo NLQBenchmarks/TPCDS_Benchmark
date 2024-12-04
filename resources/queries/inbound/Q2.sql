@@ -1,1 +1,9 @@
-SELECT `d_customer_first_name`, `d_customer_last_name`, `d_cd_dep_count` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_cd_dep_count` > 5)) ORDER BY `d_customer_first_name`, `d_customer_last_name`, `d_cd_dep_count`
+SELECT
+  DISTINCT `Customer First Name`,
+  `Customer Last Name`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Customer Dependent Count` > 5
+  AND `Customer First Name` IS NOT NULL
+  AND `Customer Last Name` IS NOT NULL

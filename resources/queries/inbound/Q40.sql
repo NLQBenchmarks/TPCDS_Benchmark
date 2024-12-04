@@ -1,1 +1,16 @@
-SELECT `m_ss_quantity_avg`, `I category`, `d_store_name` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `I category`, `d_store_name`
+SELECT
+  `Store Name`,
+  `Product Category`,
+  AVG(`Store Quantity Sold`) AS `Average Store Sales Quantity`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Store Name` IS NOT NULL
+  AND `Product Category` IS NOT NULL
+  AND `Store Quantity Sold` IS NOT NULL
+GROUP BY
+  `Store Name`,
+  `Product Category`
+ORDER BY
+  `Store Name`,
+  `Product Category`

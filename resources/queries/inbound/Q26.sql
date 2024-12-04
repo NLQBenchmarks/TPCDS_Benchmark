@@ -1,1 +1,13 @@
-SELECT `d_customer_first_name`, `d_cd_gender`, `Income Band`, `d_Customer State Name`, `d_birth_country` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_birth_country` = 'CYPRUS')) ORDER BY `d_customer_first_name`, `d_cd_gender`, `Income Band`, `d_Customer State Name`, `d_birth_country`
+SELECT
+  `Customer First Name`,
+  `Gender`,
+  `Income Band Lower Bound`,
+  `Customer State_name`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Birth Country` = 'CYPRUS'
+  AND `Customer First Name` IS NOT NULL
+  AND `Gender` IS NOT NULL
+  AND `Income Band Lower Bound` IS NOT NULL
+  AND `Customer State_name` IS NOT NULL

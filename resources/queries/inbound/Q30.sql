@@ -1,1 +1,8 @@
-SELECT `i_product_name`, `d_cd_dep_count`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_cd_dep_count` = 4) and (`Sold Calendar Year` = 2002)) ORDER BY `i_product_name`, `d_cd_dep_count`, `Sold Calendar Year`
+SELECT
+  `Item Product Name`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Customer Dependent Count` = 4
+  AND `Sold Calendar Year` = 2002
+  AND `Item Product Name` IS NOT NULL

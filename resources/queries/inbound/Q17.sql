@@ -1,1 +1,10 @@
-SELECT `d_product_brand_name`, `m_ss_quantity_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `d_product_brand_name`
+SELECT
+  `Product Brand Name`,
+  `Store Quantity Sold`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Product Brand Name` IS NOT NULL
+  AND `Store Quantity Sold` IS NOT NULL
+ORDER BY
+  `Product Brand Name`

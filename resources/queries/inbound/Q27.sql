@@ -1,1 +1,8 @@
-SELECT `Ship Mode Type`, `d_customer_last_name`, `Ship Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Ship Calendar Year` = 2002) and (`d_customer_last_name` = 'Abel')) ORDER BY `Ship Mode Type`, `d_customer_last_name`, `Ship Calendar Year`
+SELECT
+  `Ship Mode Type`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Customer Last Name` = 'Abel'
+  AND `Sold Calendar Year` = 2002
+  AND `Ship Mode Type` IS NOT NULL

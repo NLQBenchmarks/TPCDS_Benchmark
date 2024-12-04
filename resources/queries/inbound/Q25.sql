@@ -1,1 +1,13 @@
-SELECT `d_customer_first_name`, `Income Band`, `d_hd_vehicle_count`, `d_hd_buy_potential`, `d_Customer State Name` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_Customer State Name` = 'New Jersey')) ORDER BY `d_customer_first_name`, `Income Band`, `d_hd_vehicle_count`, `d_hd_buy_potential`, `d_Customer State Name`
+SELECT
+  `Customer First Name`,
+  `Income Band`,
+  `Vehicle Count`,
+  `Customer Buy Potential`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Customer State` = 'NJ'
+  AND `Customer First Name` IS NOT NULL
+  AND `Income Band` IS NOT NULL
+  AND `Vehicle Count` IS NOT NULL
+  AND `Customer Buy Potential` IS NOT NULL

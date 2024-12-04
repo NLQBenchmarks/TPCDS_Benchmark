@@ -1,1 +1,14 @@
-SELECT `d_Store State Name`, `Sold Calendar Year`, `d_product_brand_name`, `Average Store Unit Net Profit` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Sold Calendar Year` = 2002) and (`d_Store State Name` = 'Tennessee')) ORDER BY `d_Store State Name`, `Sold Calendar Year`, `d_product_brand_name`
+SELECT
+  `Product Brand Name`,
+  AVG(`Store Net Profit`) AS `Average Store Net Profit`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Store State` = 'TN'
+  AND `Sold Calendar Year` = 2002
+  AND `Product Brand Name` IS NOT NULL
+  AND `Store Net Profit` IS NOT NULL
+GROUP BY
+  `Product Brand Name`
+ORDER BY
+  `Product Brand Name`

@@ -1,1 +1,12 @@
-SELECT `i_product_name`, `m_store_returns_count_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `i_product_name`
+SELECT
+  `Product Item ID`,
+  `Item Product Name`,
+  `Store Returns Count`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Product Item ID` IS NOT NULL
+  AND `Item Product Name` IS NOT NULL
+  AND `Store Returns Count` IS NOT NULL
+ORDER BY
+  `Product Item ID`

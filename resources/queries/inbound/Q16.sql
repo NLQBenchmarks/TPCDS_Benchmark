@@ -1,1 +1,6 @@
-SELECT `m_cs_bill_customer_sk_count` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model`
+SELECT
+  `Catalog Customer Count`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Catalog Customer Count` IS NOT NULL

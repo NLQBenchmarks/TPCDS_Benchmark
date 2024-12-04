@@ -1,1 +1,8 @@
-SELECT `d_store_name`, `d_s_number_employees` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `d_store_name`, `d_s_number_employees`
+SELECT
+  `Store Name`,
+  `Store Number of Employees`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Store Name` IS NOT NULL
+  AND `Store Number of Employees` IS NOT NULL

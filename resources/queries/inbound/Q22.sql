@@ -1,1 +1,14 @@
-SELECT `d_net_profit_tier`, `d_store_name`, `d_cd_gender`, `Sold Calendar Year` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Sold Calendar Year` = 2002)) ORDER BY `d_net_profit_tier`, `d_store_name`, `d_cd_gender`, `Sold Calendar Year`
+SELECT
+  `Store Name`,
+  `Gender`,
+  `Net Profit Tier`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Sold Calendar Year` = 2002
+  AND `Store Name` IS NOT NULL
+  AND `Gender` IS NOT NULL
+  AND `Net Profit Tier` IS NOT NULL
+ORDER BY
+  `Store Name`,
+  `Gender`

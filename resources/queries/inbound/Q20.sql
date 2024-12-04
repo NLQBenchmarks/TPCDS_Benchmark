@@ -1,1 +1,12 @@
-SELECT `d_Customer State Name`, `m_web_sales_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `d_Customer State Name`
+SELECT
+  `Customer State`,
+  SUM(`Web Sales`) AS `Total Web Sales`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Customer State` IS NOT NULL
+  AND `Web Sales` IS NOT NULL
+GROUP BY
+  `Customer State`
+ORDER BY
+  `Customer State`

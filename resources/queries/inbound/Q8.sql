@@ -1,1 +1,6 @@
-SELECT `i_product_name`, `d_product_current_price` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_product_current_price` > 70)) ORDER BY `i_product_name`, `d_product_current_price`
+SELECT
+  `Item Product Name`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Product Current Price` > 70

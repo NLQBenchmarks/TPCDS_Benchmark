@@ -1,1 +1,9 @@
-SELECT `d_customer_id`, `d_hd_vehicle_count`, `Income Band` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Income Band` = 9)) ORDER BY `d_customer_id`, `d_hd_vehicle_count`, `Income Band`
+SELECT
+  `Customer ID`,
+  `Vehicle Count`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Income Band` = 9
+  AND `Customer ID` IS NOT NULL
+  AND `Vehicle Count` IS NOT NULL

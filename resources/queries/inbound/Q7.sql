@@ -1,1 +1,7 @@
-SELECT `d_warehouse_name`, `d_warehouse_square_feet`, `Warehouse City` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Warehouse City` = 'Fairview')) ORDER BY `d_warehouse_name`, `d_warehouse_square_feet`, `Warehouse City`
+SELECT
+  `Warehouse Name`,
+  `Warehouse Square Feet`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Warehouse City` = 'Fairview'

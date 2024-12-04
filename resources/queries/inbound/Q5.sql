@@ -1,1 +1,6 @@
-SELECT `d_product_brand_name`, `d_product_manufacturer_name` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_product_manufacturer_name` = 'able')) ORDER BY `d_product_brand_name`, `d_product_manufacturer_name`
+SELECT
+  DISTINCT `Product Brand Name`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Product Manufacturer Name` = 'able'

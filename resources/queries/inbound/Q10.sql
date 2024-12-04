@@ -1,1 +1,6 @@
-SELECT `d_warehouse_name`, `d_warehouse_square_feet` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_warehouse_square_feet` > 140000)) ORDER BY `d_warehouse_name`, `d_warehouse_square_feet`
+SELECT
+  `Warehouse Name`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Warehouse Square Feet` > 140000

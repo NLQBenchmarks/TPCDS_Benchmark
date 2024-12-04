@@ -1,1 +1,7 @@
-SELECT `d_Store State Name`, `Store_Number` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`d_Store State Name` = 'Tennessee')) ORDER BY `d_Store State Name`, `Store_Number`
+SELECT
+  DISTINCT `Store Number`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Store State Name` = 'Tennessee'
+  AND `Store Number` IS NOT NULL

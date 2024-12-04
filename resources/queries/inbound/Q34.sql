@@ -1,1 +1,15 @@
-SELECT `Ship d_Customer State Name`, `Ws_Web_Site_Sk Level`, `m_ws_quantity_sum`, `m_ws_ext_ship_cost_sum` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` WHERE ((`Ship d_Customer State Name` = 'New Jersey')) ORDER BY `d_Customer State Name`, `Ws_Web_Site_Sk Level`
+SELECT
+  `Web Site`,
+  SUM(`Web Quantity Sold`) AS `Total Quantity Sold`,
+  SUM(`Web Ext Ship Cost`) AS `Total Shipping Cost`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Ship Customer State_name` = 'New Jersey'
+  AND `Web Site` IS NOT NULL
+  AND `Web Quantity Sold` IS NOT NULL
+  AND `Web Ext Ship Cost` IS NOT NULL
+GROUP BY
+  `Web Site`
+ORDER BY
+  `Web Site`

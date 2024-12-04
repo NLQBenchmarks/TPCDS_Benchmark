@@ -1,1 +1,11 @@
-SELECT `d_Customer State Name`, `Customer Count` FROM `sml-tpcds_main`.`TPC-DS Benchmark Model` ORDER BY `d_Customer State Name`
+SELECT
+  `Customer State`,
+  COUNT(`Customer ID`) AS `Total Customers`
+FROM
+  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+WHERE
+  `Customer State` IS NOT NULL
+GROUP BY
+  `Customer State`
+ORDER BY
+  `Customer State`
