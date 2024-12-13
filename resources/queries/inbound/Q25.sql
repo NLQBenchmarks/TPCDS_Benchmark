@@ -1,13 +1,14 @@
 SELECT
-  `Customer First Name`,
-  `Income Band`,
-  `Vehicle Count`,
-  `Customer Buy Potential`
+  "Customer First Name",
+  "Income Band",
+  "Vehicle Count",
+  "Customer Buy Potential"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Customer State` = 'NJ'
-  AND `Customer First Name` IS NOT NULL
-  AND `Income Band` IS NOT NULL
-  AND `Vehicle Count` IS NOT NULL
-  AND `Customer Buy Potential` IS NOT NULL
+  "Customer State" = 'NJ'
+  AND "Customer First Name" IS NOT NULL
+  AND "Income Band" IS NOT NULL
+  AND "Vehicle Count" IS NOT NULL
+  AND "Customer Buy Potential" IS NOT NULL
+LIMIT 100

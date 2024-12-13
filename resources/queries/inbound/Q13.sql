@@ -1,6 +1,6 @@
 SELECT
-  SUM(`Web Sales`) AS `Total Web Sales`
+  SUM("Web Sales") AS "Total Web Sales"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Sold Calendar Year` = 2002
+  "Sold Calendar Year" = 2002

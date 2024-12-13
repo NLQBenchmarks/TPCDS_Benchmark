@@ -1,7 +1,7 @@
 SELECT
-  DISTINCT `Store Number`
+  DISTINCT "Store Number"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Store State Name` = 'Tennessee'
-  AND `Store Number` IS NOT NULL
+  "Store State Name" = 'Tennessee'
+  AND "Store Number" IS NOT NULL

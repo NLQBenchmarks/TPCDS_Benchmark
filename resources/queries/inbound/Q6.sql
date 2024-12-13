@@ -1,6 +1,6 @@
 SELECT
-  DISTINCT `Carrier`
+  DISTINCT "Carrier"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Ship Mode Type` = 'EXPRESS'
+  "Ship Mode Type" = 'EXPRESS'

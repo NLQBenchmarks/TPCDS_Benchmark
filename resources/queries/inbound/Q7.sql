@@ -1,7 +1,7 @@
 SELECT
-  `Warehouse Name`,
-  `Warehouse Square Feet`
+  "Warehouse Name",
+  "Warehouse Square Feet"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Warehouse City` = 'Fairview'
+  "Warehouse City" = 'Fairview'

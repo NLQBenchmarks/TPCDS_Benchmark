@@ -1,10 +1,10 @@
 SELECT
-  `Customer First Name`,
-  `Gender`
+  "Customer First Name",
+  "Gender"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Store Name` = 'ese'
-  AND `Sold Calendar Year` = 2001
-  AND `Customer First Name` IS NOT NULL
-  AND `Gender` IS NOT NULL
+  "Store Name" = 'ese'
+  AND "Sold Calendar Year" = 2001
+  AND "Customer First Name" IS NOT NULL
+  AND "Gender" IS NOT NULL

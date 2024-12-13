@@ -1,6 +1,7 @@
 SELECT
-  `Item Product Name`
+  "Item Product Name"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Product Brand Name` = 'corpcorp #1'
+  "Product Brand Name" = 'corpcorp #1'
+LIMIT 100

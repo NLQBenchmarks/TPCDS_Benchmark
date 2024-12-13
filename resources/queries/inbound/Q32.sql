@@ -1,15 +1,13 @@
 SELECT
-  `Store State`,
-  COUNT(`Store Customer Count`) AS `Store Customer Count`,
-  AVG(`Store Quantity Sold`) AS `Average Sales Quantity`
+  "Store State",
+  SUM("Store Customer Count") AS store_customer_count,
+  AVG("Average Store Sales Quantity") AS avg_sales_quantity
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Sold Calendar Year` = 2002
-  AND `Store State` IS NOT NULL
-  AND `Store Customer Count` IS NOT NULL
-  AND `Store Quantity Sold` IS NOT NULL
+  "Sold Calendar Year" = 2002
+  AND "Store State" IS NOT NULL
 GROUP BY
-  `Store State`
+  "Store State"
 ORDER BY
-  `Store State`
+  "Store State"

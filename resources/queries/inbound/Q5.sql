@@ -1,6 +1,6 @@
 SELECT
-  DISTINCT `Product Brand Name`
+  DISTINCT "Product Brand Name"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Product Manufacturer Name` = 'able'
+  "Product Manufacturer Name" = 'able'

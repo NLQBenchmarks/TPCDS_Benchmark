@@ -1,11 +1,12 @@
 SELECT
-  `Customer State`,
-  COUNT(`Customer ID`) AS `Total Customers`
+  "Customer State",
+  COUNT("Customer ID") AS "Total Customers"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Customer State` IS NOT NULL
+  "Customer State" IS NOT NULL
 GROUP BY
-  `Customer State`
+  "Customer State"
 ORDER BY
-  `Customer State`
+  "Customer State"
+LIMIT 100

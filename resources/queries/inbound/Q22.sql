@@ -1,14 +1,14 @@
 SELECT
-  `Store Name`,
-  `Gender`,
-  `Net Profit Tier`
+  "Store Name",
+  "Gender",
+  "Net Profit Tier"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Sold Calendar Year` = 2002
-  AND `Store Name` IS NOT NULL
-  AND `Gender` IS NOT NULL
-  AND `Net Profit Tier` IS NOT NULL
+  "Sold Calendar Year" = 2002
+  AND "Store Name" IS NOT NULL
+  AND "Gender" IS NOT NULL
+  AND "Net Profit Tier" IS NOT NULL
 ORDER BY
-  `Store Name`,
-  `Gender`
+  "Store Name",
+  "Gender"

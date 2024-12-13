@@ -1,10 +1,11 @@
 SELECT
-  `Item Product Name`,
-  `Total Net Profit`
+  "Item Product Name",
+  "Total Net Profit"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Item Product Name` IS NOT NULL
-  AND `Total Net Profit` IS NOT NULL
+  "Item Product Name" IS NOT NULL
+  AND "Total Net Profit" IS NOT NULL
 ORDER BY
-  `Item Product Name`
+  "Item Product Name"
+LIMIT 1OO

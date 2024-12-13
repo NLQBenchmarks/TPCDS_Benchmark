@@ -1,8 +1,8 @@
 SELECT
-  `Customer City`
+  "Customer City"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Customer Dependent Count` > 5
-  AND `Income Band` = 7
-  AND `Customer City` IS NOT NULL
+  "Customer Dependent Count" > 5
+  AND "Income Band" = 7
+  AND "Customer City" IS NOT NULL

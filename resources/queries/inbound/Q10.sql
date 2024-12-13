@@ -1,6 +1,6 @@
 SELECT
-  `Warehouse Name`
+  "Warehouse Name"
 FROM
-  `tpcds`.`tpcds_genie_clean`.`tpcds_benchmark_model`
+  "tpcds"."tpcds_benchmark_model"
 WHERE
-  `Warehouse Square Feet` > 140000
+  "Warehouse Square Feet" > 140000
